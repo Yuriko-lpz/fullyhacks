@@ -23,8 +23,8 @@ struct WelcomeScreen: View {
                 
                 VStack {
                     
-                    Text("NAME")
-                        .font(Font.custom("Anta", size: 96))
+                    Text("MissionUp")
+                        .font(Font.custom("Anta", size: 70))
                         .foregroundColor(Color(red: 0.48, green: 0.85, blue: 0.77))
                         .padding(.bottom, 80);
                     

@@ -5,6 +5,7 @@ struct ParentPortal: View {
     @State private var password: String = ""
     @State private var errorMessage: String = ""
     @State private var navigateToHome: Bool = false
+    @EnvironmentObject var parentManager: ParentManager
     
     var body: some View {
         ZStack {
@@ -76,7 +77,7 @@ struct ParentPortal: View {
                         .cornerRadius(15)
                 }
                 .navigationDestination(isPresented: $navigateToHome) {
-                    ParentHomePage()
+                    ParentHomePage().environmentObject(parentManager)
                 }
                 
                 NavigationLink(destination: ParentNewAccount()) {

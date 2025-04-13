@@ -29,6 +29,8 @@ struct OurAppApp: App {
     var body: some Scene {
         WindowGroup {
             WelcomeScreen()
+                .environmentObject(parentManager)
+                .environmentObject(userManager)
         }
         .modelContainer(sharedModelContainer)
     }

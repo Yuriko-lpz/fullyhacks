@@ -316,12 +316,12 @@ struct AccountView: View {
                                     .frame(width: 280, height: 39)
                                     .background(Color(red: 0.74, green: 0.69, blue: 0.80))
                                     .cornerRadius(10)
-                                if let profile = userManager.profile {
-                                    Text(profile.email)
+                                
+                                    Text("hello@gmail.com")
                                         .font(Font.custom("Anta", size: 20))
                                         .foregroundColor(Color(red: 0.52, green: 0.45, blue: 0.30))
                                         .padding(.leading, 8)
-                                }
+                                
                             }
                         }
                         .padding(.trailing, 10)
