@@ -10,6 +10,9 @@ import SwiftData
 
 @main
 struct OurAppApp: App {
+    @StateObject var parentManager = ParentManager()
+    @StateObject var userManager = UserManager()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
